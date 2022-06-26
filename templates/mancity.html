@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body style="background-color:#5597BD;">
+        <h1 style="font-family:verdana">Club: {{ club }}!</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/sco/e/eb/Manchester_City_FC_badge.svg" style="width:100px; height:100px">
+        <form action="/action/createprojection" method="POST">
+            <input type="text" name="year" placeholder="enter year">
+            <input type="submit" value="submit">
+        </form>
+        <p style="font-family:verdana">Or you can log out.</p>
+        <form action="/logout" method="POST">
+            <input type="submit" value="Log out">
+        </form>
+    </body>
+</html>
